@@ -6,6 +6,20 @@ setopt SHARE_HISTORY
 
 BASEDIR="$(dirname "$(dirname "$0")")"
 
+has() {
+    command -v "$1" &> /dev/null
+}
+
+install-package() {
+	if has apt; then
+		sudo packman -Sy "$1"
+	elif has zypper; then
+		sudo zypper in "$1"
+	elif has apt; then
+		sudo apt install "$1"
+	fi
+}
+
 # Bash-like shortcuts
 bindkey '^[[1;5C' forward-word #Ctrl + Right
 bindkey '^[[1;5D' backward-word #Ctrl + Left
@@ -44,7 +58,6 @@ alias findtxt='grep -IHrnws --exclude=\*.log -s '/' -e'
 alias clr='reset'
 alias please='sudo'
 
-
 alias tar-create='tar -cvf'
 alias tar-expand='tar -zxvf'
 alias tar-look='tar -tf'
@@ -69,10 +82,6 @@ alias sctlu="systemctl --user"
 alias jctl="sudo journalctl"
 alias jctlu="journalctl --user-unit"
 
-has() {
-    command -v "$1" &> /dev/null
-}
-
 compress-7zst() {
     if [ -z "$1" ]; then
         echo "Usage: compress-7zst <out_file> <in_files...>"
@@ -86,6 +95,9 @@ if has micro; then
     export EDITOR="micro"
 elif has vim; then 
     export EDITOR="vim"
+else
+	install-package micro
+	export EDITOR="micro"
 fi
 
 export PATH="$SCR/bin:$PATH"

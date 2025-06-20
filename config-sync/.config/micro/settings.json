@@ -8,6 +8,7 @@
     "hlsearch": true,
     "hltrailingws": false,
     "mkparents": true,
+    "relativeruler": true,
     "savecursor": true,
     "saveundo": true,
     "scrollbar": true,
