@@ -8,7 +8,7 @@ BASEDIR="$(dirname "$(dirname "$0")")"
 
 # Bash-like shortcuts
 bindkey '^[[1;5C' forward-word #Ctrl + Right
-bindkez '^[[1;5D' backward-word #Ctrl + Left
+bindkey '^[[1;5D' backward-word #Ctrl + Left
 
 modern-replace() {
     orig_cmd="$1"
@@ -94,6 +94,13 @@ export PATH="$HOME/.cargo/bin:$PATH"
 
 addline() {
   grep -qxF "$2" "$1" || echo "$2" >> "$1"
+}
+
+spushd () {
+    pushd "$@" > /dev/null || exit
+}
+spopd () {
+    popd "$@" > /dev/null || exit
 }
 
 # Minecraft coloring
