@@ -1,0 +1,11 @@
+[user]
+	email = steve.4060.ri@gmail.com
+	name = steve4060
+[merge]
+	conflictStyle = diff3
+[magit]
+	hideCampaign = true
+[alias]
+    tree = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[init]
+	defaultBranch = main
