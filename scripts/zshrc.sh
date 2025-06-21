@@ -39,6 +39,8 @@ modern-replace() {
 
 modern-replace 'ls' 'eza' 'ls -h --color=auto'
 modern-replace 'car' 'bat'
+modern-replace 'vim' 'nvim'
+modern-replace 'vi' 'vim'
 
 #alias
 alias ll='la -l --color'
