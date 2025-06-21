@@ -1,14 +1,4 @@
--- Normal vim config
-
-vim.cmd("set tabstop=4")
-vim.cmd("set shiftwidth=4")
-vim.cmd("set expandtab") vim.cmd("set relativenumber")
-vim.cmd("set number")
-vim.cmd("set cursorline")
-
--- learder
-
-vim.g.mapleader = " "
+require("vim-options")
 
 -- lazy.nvim install
 
@@ -31,26 +21,3 @@ vim.opt.rtp:prepend(lazypath)
 -- lazy configuration
 
 require("lazy").setup("plugins")
-
--- telescope
-local builtin = require('telescope.builtin')
-
-vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-
--- treesitter
-
-require'nvim-treesitter.configs'.setup {
-    ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "rust", "java" },
-    highlight = { enable = true},
-    indent = { enable = true },
-}
-
--- neo-tree
-
-vim.keymap.set('n', '<C-n>', ':Neotree filesystem reveal left<CR>')
-
--- after loading of plugins
-
-vim.cmd[[colorscheme tokyonight-moon]]
