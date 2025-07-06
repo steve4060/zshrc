@@ -39,15 +39,16 @@ modern-replace() {
 
 modern-replace 'ls' 'eza' 'ls -h --color=auto'
 modern-replace 'car' 'bat'
+modern-replace 'rm' 'trash-put'
 modern-replace 'vim' 'nvim'
 modern-replace 'vi' 'vim'
 
 #alias
-alias ll='la -l --color'
+alias ll='ls -l --color'
 alias l='ll'
 alias lla='ls -lA --color'
 alias grep='grep --color'
-alias rm='rm -ir'
+# alias rm='rm -ir'
 alias mkdirs='mkdir -p'
 
 alias ip='ip -c -h -p'
