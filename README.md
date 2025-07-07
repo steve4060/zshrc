@@ -10,6 +10,13 @@ bash <(curl -sL https://raw.githubusercontent.com/steve4060/zshrc/refs/heads/mai
 
 ## Dependensies
 
+### CLI
+
+1. eza
+2. nvim
+3. bat
+4. trash-cli
+
 ### Nvim 
 
 1. [ripgrep](https://github.com/BurntSushi/ripgrep)
