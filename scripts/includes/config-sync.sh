@@ -45,5 +45,6 @@ check-config "$HOME/.config/micro" "$CFGSYNC/.config/micro"
 check-config "$HOME/.config/vim" "$CFGSYNC/.config/vim"
 check-config "$HOME/.config/tmux" "$CFGSYNC/.config/tmux"
 check-config "$HOME/.config/nvim" "$CFGSYNC/.config/nvim"
+check-config "$HOME/.config/kitty" "$CFGSYNC/.config/kitty"
 
 check-config "$HOME/.gitconfig" "$CFGSYNC/.gitconfig"
