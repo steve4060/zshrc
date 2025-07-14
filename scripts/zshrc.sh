@@ -40,8 +40,6 @@ modern-replace() {
 modern-replace 'ls' 'eza' 'ls -h --color=auto'
 modern-replace 'car' 'bat'
 modern-replace 'rm' 'trash-put'
-modern-replace 'vim' 'nvim'
-modern-replace 'vi' 'vim'
 
 #alias
 alias ll='ls -l --color'
@@ -106,6 +104,7 @@ fi
 export PATH="$SCR/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export NIXPKGS_ALLOW_UNFREE=1
 
 addline() {
   grep -qxF "$2" "$1" || echo "$2" >> "$1"
