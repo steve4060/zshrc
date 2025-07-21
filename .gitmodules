@@ -7,3 +7,6 @@
 [submodule "config-sync/emacs"]
 	path = config-sync/emacs
 	url = https://github.com/steve4060/emacs.git
+[submodule "config-sync/--force"]
+	path = config-sync/--force
+	url = https://github.com/steve4060/emacs.git

@@ -48,6 +48,7 @@ check-config "$HOME/.config/nvim" "$CFGSYNC/.config/nvim"
 check-config "$HOME/.config/kitty" "$CFGSYNC/.config/kitty"
 
 check-config "$HOME/.gitconfig" "$CFGSYNC/.gitconfig"
+check-config "$HOME/.mbsyncrc" "$CFGSYNC/.mbsyncrc"
 
 # Emacs
 check-config "$HOME/.emacs.local" "$CFGSYNC/emacs/.emacs.local"
