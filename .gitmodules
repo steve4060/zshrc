@@ -4,3 +4,6 @@
 [submodule "config-sync/zshrc"]
 	path = config-sync/zshrc
 	url = https://github.com/steve4060/zshrc.git
+[submodule "config-sync/emacs"]
+	path = config-sync/emacs
+	url = https://github.com/steve4060/emacs.git
