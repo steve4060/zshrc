@@ -48,3 +48,10 @@ check-config "$HOME/.config/nvim" "$CFGSYNC/.config/nvim"
 check-config "$HOME/.config/kitty" "$CFGSYNC/.config/kitty"
 
 check-config "$HOME/.gitconfig" "$CFGSYNC/.gitconfig"
+
+# Emacs
+check-config "$HOME/.emacs.local" "$CFGSYNC/emacs/.emacs.local"
+check-config "$HOME/.emacs.snippets" "$CFGSYNC/emacs/.emacs.snippets"
+check-config "$HOME/.emacs.st" "$CFGSYNC/emacs/.emacs.st"
+check-config "$HOME/.emacs" "$CFGSYNC/emacs/.emacs"
+check-config "$HOME/.emacs.custom.el" "$CFGSYNC/emacs/.emacs.custom.el"

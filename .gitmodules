@@ -1,3 +1,6 @@
 [submodule "plugins/zsh-autosuggestions"]
 	path = plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule "config-sync/zshrc"]
+	path = config-sync/zshrc
+	url = https://github.com/steve4060/zshrc.git
